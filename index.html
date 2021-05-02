@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hey Monkey, To do something</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="div1"></div>
+            <div class="div2">
+                <section class="js-weatherText">
+                    <span class="js-weather"></span>
+                    <span class="js-temp"></span>
+                </section>
+                <section class="js-icon">
+                </section>
+            </div>
+            <div class="div3">
+                <img class = "logo" src="logo.png" />
+            </div>
+        </header>
+
+        <main>
+            <ul>
+                <div class="js-clock">
+                    <div class="js-clockTitle">00:00</div>
+                </div>
+
+                <form class="js-form form">
+                    <input type="text" placeholder="What is your name?" />
+                </form>
+
+                <div class="js-greetings greetings"></div>
+
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="To Do Something, You Can!" />
+                </form>
+            </ul>
+
+            <ul class="js-toDoList">
+                <div class="js-pendingMark">Pending</div>
+                <ul class="js-toDoPending"></ul>
+
+                <div class="js-finishedMark">Finished</div>
+                <ul class="js-toDoFinished"></ul>
+            </ul>
+        </main>
+        <script src="src/bg.js"></script>
+        <script src="src/weather.js"></script>
+        <script src="src/clock.js"></script>
+        <script src="src/greeting.js"></script>
+        <script src="src/todo.js"></script>
+    </body>
+
+</html>
